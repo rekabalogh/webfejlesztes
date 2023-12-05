@@ -1,0 +1,342 @@
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+/*
+@font-face {
+    font-family: 'Work Sans';
+    src: url("InterWork_Sans/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+*/
+body {
+    margin: 0;
+    padding: 0;
+    background: #D0F0C0;
+    font-family: cursive;
+}
+
+/* navigation bar */
+
+nav ul {
+    list-style: none;
+    background: #009F6B;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    width: 80;
+    display: block;
+    padding: 30px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20;
+}
+
+nav ul li a:hover {
+    background: #275243;
+    border-radius: 15px;
+}
+
+nav ul li a.active {
+    background-color: #275243;
+    border-radius: 15px;
+}
+
+/* mindegyik oldalra vonatkozik */
+header {
+    background-color: #009F6B;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container>* {
+    height: fit-content;
+    margin: 1%;
+}
+
+aside {
+    background-color: #009F6B;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1 1 100%;
+    padding: 15px;
+    float: left;
+}
+
+article {
+    background-color: #009F6B;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1 1 100%;
+    padding: 15px;
+    float: right;
+}
+
+footer {
+    background-color: #888888;
+    display: flex;
+    height: 260px;
+}
+
+.vonal {
+    border-left: 5px solid black;
+    height: 260px;
+    position: absolute;
+    /*ezzel kerültek egy sorba az adatokkal*/
+    margin-left: 10px;
+}
+
+.lablec {
+    margin-left: 25px;
+}
+
+.keszitette {
+    background-color: #686868;
+    padding: 10px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.cim {
+    text-align: center;
+}
+
+/* főoldal */
+img.boberfooldal {
+    height: auto;
+    border-radius: 20%;
+    border: 3px solid black;
+    width: 230px;
+}
+
+.fooldalaside {
+    /*képet középre kell rakni */
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.fooldalarticle1 {
+    width: 70%;
+    height: auto;
+}
+
+.fooldalarticle2 {
+    width: 50%;
+    height: auto;
+}
+
+/* ismertető oldal */
+img.ismertetohod {
+    height: auto;
+    border-radius: 20%;
+    border: 3px solid black;
+    width: 260px;
+}
+
+.ismertetoasidekep {
+    width: 20%;
+    height: auto;
+}
+
+.ismertetoarticle1 {
+    width: 80%;
+    height: auto;
+}
+
+.ismertetoaside2 {
+    width: 30%;
+    height: auto;
+}
+
+.ismertetoarticle2 {
+    width: 70%;
+    height: auto;
+}
+
+.ismertetoarticleelofordulas {
+    width: 60%;
+    height: auto;
+}
+
+.asideterulet {
+    width: 40%;
+    height: auto;
+}
+
+img.terulet {
+    width: 80%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* érdekességek */
+
+
+input {
+    float: right;
+    font-size: 30px;
+    background-color: #275243;
+    border: 0px;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 60%;
+    height: 30px;
+}
+
+.gomb {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.quiz {
+    background-color: #009F6B;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.kerdes {
+    font-weight: bold;
+}
+
+.galeria {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galleria-theme-classic {
+    background-color: #009F6B;
+    border-radius: 8px;
+    display: flex;
+}
+
+/* örökbefogadás */
+.orokbefogadas {
+    background-color: #009F6B;
+    border-radius: 8%;
+    text-align: left;
+    margin: 10px;
+    padding: 30px;
+    font-size: 30px;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.boberkep {
+    float: left;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid black;
+    border-radius: 8%;
+    flex-direction: column;
+}
+
+.boberkepek {
+    text-align: center;
+    background-color: #009F6B;
+    border-radius: 8%;
+    padding: 30px;
+    border-spacing: 20px;
+    display: flex;
+}
+
+.hodnevek {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.orokbefogadascim {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* form */
+label.error {
+    color: rgb(0, 255, 128);
+}
+
+@media all and (min-width: 600px) {
+
+    /*tablet*/
+    nav {
+        flex-basis: 23%;
+    }
+
+    article {
+        flex-basis: 73%;
+    }
+
+    aside {
+        flex-basis: 100%;
+    }
+
+    aside.tapertek {
+        flex-basis: 100%;
+    }
+
+
+}
+
+@media all and (min-width: 768px) {
+
+    /*számítógép*/
+    nav {
+        flex-basis: 23%;
+    }
+
+    article {
+        flex-basis: 48%;
+    }
+
+
+    aside {
+        flex-basis: 23%;
+    }
+
+}

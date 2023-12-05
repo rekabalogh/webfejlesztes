@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örökbefogadás</title>
+    <link rel="stylesheet" href="beadandostyle.css">
+    <link rel="icon" type="image" href="képek/hod.jpg">
+    <script src="galleria-1.6.1/jquery-3.7.1.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myform").validate({
+                rules: {
+                    vnev: "required",
+                    knev: "required",
+                    szuletesiido: "required",
+                    iranyitoszam: {
+                        required: true,
+                        minlenght: 4,
+                        maxlenght: 3
+                    },
+                    telepules: "required",
+                    utcahazszam: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    telefonszam: {
+                        required: true,
+                        minlength: 8
+                    },
+                    radio1 : "required",
+                },
+                messages: {
+                    vnev: "Adja meg a vezetéknevét!",
+                    knev: "Adja meg a keresztnevét!",
+                    szuletesiido: "Adja meg a születési dátumát!",
+                    iranyitoszam: {
+                        required: "Adja meg irányítószámát!",
+                        minlenght:"Irányítószáma legalább 4 karakter hosszú lehet!",
+                        maxlenght: "Irányítószáma maximum 4 karakter hosszú lehet!"
+                    },
+                    telepules: "Adja meg a települését!",
+                    utcahazszam: "Adja meg utcáját és házszámát!",
+                    email: {
+                        required: " Adjon meg egy valós e-mail címet!",
+                    },
+                    telefonszam: {
+                        required: "Adja meg telefonszámát!",
+                        minlenght: "Telefonszáma legalább 8 karakter hosszú legyen!"
+                    },
+                    radio1: "Válasszon támogatási formát!"
+                },
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="ismerteto.html">Ismertető</a></li>
+                <li><a href="erdekessegek.html">Érdekességek</a></li>
+                <li><a href="#" class="active">Örökbefogadás</a></li>
+            </ul>
+        </nav>
+        <h1 class="cim">Hódkert - Örökbefogadás</h1>
+    </header>
+    <div class="container">
+        <table class="boberkepek">
+            <tr>
+                <td><img src="képek/hod6.jpg" alt="bober1" class="boberkep"></td>
+                <td><img src="képek/hod2.jpg" alt="bober2" class="boberkep">
+                </td>
+                <td><img src="képek/hod3.jpg" alt="bober3" class="boberkep">
+                </td>
+                <td><img src="képek/hod4.jpg" alt="bober4" class="boberkep"></td>
+            </tr>
+            <tr class="hodnevek">
+                <td>Csobbanó</td>
+                <td>Csepergő</td>
+                <td>Örvény</td>
+                <td>Vízipók</td>
+            </tr>
+        </table>
+        <form class="form" method="post" action="http://szamtud.uni-corvinus.hu/receive.php" id="myform" novalidate>
+            <table class="orokbefogadas">
+                <tr>
+                    <td class="orokbefogadascim">
+                        <h1>Örökbefogadás</h1>
+                        <p>A nevelőszülő adatai: (erre a névre írjuk az oklevelet)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="vnev" id="vnev">Vezetéknév: <input type="text" name="vnev"></label><br>
+                        <label for="knev" id="knev">Keresztnév: <input type="text" name="knev"></label><br>
+                        <label for="szuletesiido" id="szuletesiido">Születési időpont: <input type="date"
+                                name="szuletesiido"></label><br>
+                        <label for="iranyitoszam" id="iranyitoszam">Irányítószám: <input type="number" min="1000"
+                                max="9999" name="iranyitoszam"></label><br>
+                        <label for="telepules" id="telepules">Település: <input type="text"
+                                name="telepules"></label><br>
+                        <label for="utcahazszam" id="utcahazszam">Utca, házszám: <input type="text"
+                                name="utcahazszam"></label><br>
+                        <label for="telefonszam" id="telefonszam">Telefonszám: <input type="tel" name="telefonszam"
+                                value="+36"></label><br>
+                        <label for="email" id="email">E-mail cím: <input type="email" name="email"></label><br>
+                        <label for="orokbefogadas" id="orokbefogadas">Melyik hódot szeretné örökbefogadni?
+                            <select name="orokbefogadas">
+                                <option value="Csobbanó">Csobbanó</option>
+                                <option value="Csepergő">Csepergő</option>
+                                <option value="Örvény">Örvény</option>
+                                <option value="Vízipók">Vízipók</option>
+                            </select></label><br>
+                            <label for="radio1" id="radio1"><input type="radio" name="radio1" value="alap kategória">
+                        Támogatás adatai<br>
+                                12000Ft adomány: tartalmaz 1 db
+                                oklevelet,
+                                életrajzi lapot, állat fényképet és egy nevelőszülői kártyát, amely ingyenes
+                                belépőjegyként
+                                szolgál az évente két alkalommal a Hódkertbe</label>
+                            <br>
+                            <label for="radio1" id="radio1">
+                                <input type="radio" name="radio1" value="prémium kategória">20 000 FT adomány, prémium
+                                kategória: tartalmaz az alapcsomagon kívül egy darab egyszer felhasználható felnőtt
+                                állatlátogatói szelvényt, amely egyszeri belépésre jogosít az Hódkertbe egy éven
+                                belül</label>
+                        <label for="megjelenes" id="megjelenes">
+                            Hozzájárulok, hogy nevem megjelenjen a weboldalon, mint örökbefogadó.<input type="checkbox"
+                                name="megjelenes"><br></label>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="gomb" type="submit" value="Elküldés">
+                        <input class="gomb" type="reset" value="Alaphelyzet">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <footer>
+        <div class="vonal"></div>
+        <div class="conatiner"></div>
+        <div class="lablec">
+            <h1>Elérhetőség</h1>
+            <p>Telefonszám: +36 2 222 2222</p>
+            <p>E-mail: hod@hod.hu</p>
+            <p>Cím: 1000 Hódfalva, Hód utca 1.</p>
+            <p class="keszitette">Készítette: Balogh Réka 2023. BCE - A weboldal csak egy projekt.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

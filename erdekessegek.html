@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Érdekességek</title>
+    <link rel="stylesheet" href="beadandostyle.css">
+    <link rel="icon" type="image" href="képek/hod.jpg">
+    <script src="galleria-1.6.1/jquery-3.7.1.js"></script>
+    <script src="galleria-1.6.1/galleria-1.6.1/dist/galleria.js"></script>
+    <script src="galleria-1.6.1/galleria-1.6.1/dist/themes/classic/galleria.classic.js"></script>
+    <script src="beadandoscript.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#images').galleria({
+                width: 700,
+                height: 500
+            });
+        });
+    </script>
+    <style>
+        .galleria {
+            width: 700px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="ismerteto.html">Ismertető</a></li>
+                <li><a href="#" class="active">Érdekességek</a></li>
+                <li><a href="orokbefogadas.html">Örökbefogadás</a></li>
+            </ul>
+        </nav>
+        <h1 class="cim">Érdekességek</h1>
+    </header>
+    <div class="container">
+        <div class="galeria" id="images">
+            <img src="képek/hod1.jpg" alt="hód eszik" title="Táplálkozás">
+            <img src="képek/hod2.jpg" alt="hód fogak" title="Fogak">
+            <img src="képek/hod3.jpg" alt="hód eszik" title="Táplálkozás">
+            <img src="képek/hod4.jpg" alt="hód vízben" title="Szórakozás">
+            <img src="képek/hod6.jpg" alt="hód vízben" title="Úszás">
+            <img src="képek/hod7.jpg" alt="hód cuki" title="Aranyos">
+            <img src="képek/hod8.jpg" alt="hód fogak" title="Fogak">
+            <img src="képek/hod9.jpg" alt="hód vízben" title="Szórakozás">
+
+        </div>
+        <div class="quiz">
+            <form id="kviz">
+                <p class="kerdes">Az eurázsiai hód világállományának nagysága a 2020-as becslések szerint hány millió
+                    példányhoz
+                    közelít?</p>
+                <input type="radio" name="question1">0,5<br>
+                <input type="radio" name="question1">1<br>
+                <input type="radio" name="question1" id="correct1">1,5<br>
+                <input type="radio" name="question1">2<br>
+                <p class="kerdes">Melyik a kisebb testű rokona?</p>
+                <input type="radio" name="question2">ausztrál hód<br>
+                <input type="radio" name="question2" id="correct2">kanadai hód<br>
+                <input type="radio" name="question2">balkáni hód<br>
+                <input type="radio" name="question2">brazil hód<br>
+                <p class="kerdes">Melyik az első számú ellensége?</p>
+                <input type="radio" name="question3" id="correct3">szürke farkas<br>
+                <input type="radio" name="question3">fehérhasú sün<br>
+                <input type="radio" name="question3">vörös róka<br>
+                <input type="radio" name="question3">üregi nyúl<br>
+                <p class="kerdes">Hány évig élnek?</p>
+                <input type="radio" name="question4">9-11<br>
+                <input type="radio" name="question4">11-13<br>
+                <input type="radio" name="question4">13-15<br>
+                <input type="radio" name="question4" id="correct4">15-17<br>
+                <p class="kerdes">Az eurázsiai hód Magyarországon védett állat. Mekkora az eszmei értéke?</p>
+                <input type="radio" name="question5">10.000 Ft<br>
+                <input type="radio" name="question5">15.000 Ft<br>
+                <input type="radio" name="question5" id="correct5">50.000 Ft<br>
+                <input type="radio" name="question5">100.000 Ft<br>
+                <p class="kerdes">Mekkora a kifejlett példány súlya?</p>
+                <input type="radio" name="question6">10 kg<br>
+                <input type="radio" name="question6">20 kg<br>
+                <input type="radio" name="question6" id="correct6">30 kg<br>
+                <input type="radio" name="question6">40 kg<br>
+                <p class="kerdes">Mennyi ideig tud a víz alatt maradni?</p>
+                <input type="radio" name="question7">2 perc<br>
+                <input type="radio" name="question7">5 perc<br>
+                <input type="radio" name="question7">10 perc<br>
+                <input type="radio" name="question7" id="correct7">15 perc<br>
+                <p class="kerdes">Milyen sebességgel képes úszni?</p>
+                <input type="radio" name="question8" id="correct8">7 km/h<br>
+                <input type="radio" name="question8">9 km/h<br>
+                <input type="radio" name="question8">11 km/h<br>
+                <input type="radio" name="question8">13 km/h<br>
+                <p class="kerdes">Egy 3-5 fős család évente hány köbméter faanyagot termel ki?</p>
+                <input type="radio" name="question9">2 köbméter<br>
+                <input type="radio" name="question9" id="correct9">3 köbméter<br>
+                <input type="radio" name="question9">4 köbméter<br>
+                <input type="radio" name="question9">5 köbméter<br>
+                <p class="kerdes">Mekkora az általuk kidőltött legnagyobb fák törzsének átmérője?</p>
+                <input type="radio" name="question10">20-40 cm<br>
+                <input type="radio" name="question10">40-60 cm<br>
+                <input type="radio" name="question10" id="correct10">60-80 cm<br>
+                <input type="radio" name="question10">80-100 cm<br>
+                <input class="gomb" type="button" value="Kiértékelés" onclick="result()">
+                <input class="gomb" type="button" value="Alaphelyzet" onclick="reset()">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="vonal"></div>
+        <div class="conatiner"></div>
+        <div class="lablec">
+            <h1>Elérhetőség</h1>
+            <p>Telefonszám: +36 2 222 2222</p>
+            <p>E-mail: hod@hod.hu</p>
+            <p>Cím: 1000 Hódfalva, Hód utca 1.</p>
+            <p class="keszitette">Készítette: Balogh Réka 2023. BCE - A weboldal csak egy projekt.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
