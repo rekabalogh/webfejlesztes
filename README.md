@@ -2,7 +2,7 @@ Oldal készítője: Balogh Réka
 
 Weblap URL címe: https://rekabalogh.github.io/webfejlesztes/
 
-A weboldalam témája az eurázsiai hód. Napjainkban nagyon fontos a védett állatok védelmezése és a populációk megőrzése. A weboldal nem valós, de az állatok védelmének fontosságára akar rámutatni. A főoldalon a kitalált Hódkert Alapítványról és az örökbefogadható hódokról található leírás. Az ismertető segítségével gyarapíthatjuk tudásunkat. Az érdekességek oldalon egy quiz kitöltése során érdekességeket tudhatunk meg a hódokról. Az örökbefogadás oldalon támogatni tudjuk a hódokat. 
+A weboldalam témája az eurázsiai hód. A weboldal nem valós, de az állatok védelmének fontosságára akar rámutatni. A főoldalon a kitalált Hódkert Alapítványról és az örökbefogadható hódokról található leírás. Az ismertető segítségével gyarapíthatjuk tudásunkat. Az érdekességek oldalon egy quiz kitöltése során érdekességeket tudhatunk meg a hódokról. Az örökbefogadás oldalon támogatni lehet a hódokat. 
 
 A JavaScript kódom az Érdekességek oldalon található, ahol egy kvízt lehet kitölténi és érdekességeket megtudni a hódokról, itt az elért pontokat számolja össze, majd jelzi a felhasználónak, hogy hány pontot ért el.
 
