@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Örökbefogadás</title>
     <link rel="stylesheet" href="beadandostyle.css">
-    <link rel="icon" type="image" href="képek/hod.jpg">
+    <link rel="icon" type="image/x-icon" href="képek/favicon.jpg">
     <script src="galleria-1.6.1/jquery-3.7.1.js"></script>
     <script src="jquery-validation-1.19.5/dist/jquery.validate.js"></script>
     <script>
@@ -31,7 +31,7 @@
                         required: true,
                         minlength: 8
                     },
-                    radio1 : "required",
+                    radio1: "required",
                 },
                 messages: {
                     vnev: "Adja meg a vezetéknevét!",
@@ -39,17 +39,18 @@
                     szuletesiido: "Adja meg a születési dátumát!",
                     iranyitoszam: {
                         required: "Adja meg irányítószámát!",
-                        minlenght:"Irányítószáma legalább 4 karakter hosszú lehet!",
+                        minlenght: "Irányítószáma legalább 4 karakter hosszú lehet!",
                         maxlenght: "Irányítószáma maximum 4 karakter hosszú lehet!"
                     },
                     telepules: "Adja meg a települését!",
                     utcahazszam: "Adja meg utcáját és házszámát!",
                     email: {
+                        email: "Tartalmaznia kell @ karaktert!",
                         required: " Adjon meg egy valós e-mail címet!",
                     },
                     telefonszam: {
                         required: "Adja meg telefonszámát!",
-                        minlenght: "Telefonszáma legalább 8 karakter hosszú legyen!"
+                        minlength: "Telefonszáma legalább 8 karakter hosszú legyen!"
                     },
                     radio1: "Válasszon támogatási formát!"
                 },
@@ -117,20 +118,20 @@
                                 <option value="Örvény">Örvény</option>
                                 <option value="Vízipók">Vízipók</option>
                             </select></label><br>
-                            <label for="radio1" id="radio1"><input type="radio" name="radio1" value="alap kategória">
                         Támogatás adatai<br>
-                                12000Ft adomány: tartalmaz 1 db
-                                oklevelet,
-                                életrajzi lapot, állat fényképet és egy nevelőszülői kártyát, amely ingyenes
-                                belépőjegyként
-                                szolgál az évente két alkalommal a Hódkertbe</label>
-                            <br>
-                            <label for="radio1" id="radio1">
-                                <input type="radio" name="radio1" value="prémium kategória">20 000 FT adomány, prémium
-                                kategória: tartalmaz az alapcsomagon kívül egy darab egyszer felhasználható felnőtt
-                                állatlátogatói szelvényt, amely egyszeri belépésre jogosít az Hódkertbe egy éven
-                                belül</label>
-                        <label for="megjelenes" id="megjelenes">
+                        <label for="radio1" id="radio1"><input type="radio" name="radio1" value="alap kategória">
+                            12000Ft adomány: tartalmaz 1 db
+                            oklevelet,
+                            életrajzi lapot, állat fényképet és egy nevelőszülői kártyát, amely ingyenes
+                            belépőjegyként
+                            szolgál az évente két alkalommal a Hódkertbe</label>
+                        <br>
+                        <label for="radio1" id="radio1">
+                            <input type="radio" name="radio1" value="prémium kategória">20 000 FT adomány, prémium
+                            kategória: tartalmaz az alapcsomagon kívül egy darab egyszer felhasználható felnőtt
+                            állatlátogatói szelvényt, amely egyszeri belépésre jogosít az Hódkertbe egy éven
+                            belül</label>
+                        <label for="megjelenes" id="megjelenes"><br>
                             Hozzájárulok, hogy nevem megjelenjen a weboldalon, mint örökbefogadó.<input type="checkbox"
                                 name="megjelenes"><br></label>
                 </tr>
