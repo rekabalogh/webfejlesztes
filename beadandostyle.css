@@ -6,17 +6,17 @@ html {
 * {
     box-sizing: border-box;
 }
-/*
+
 @font-face {
     font-family: 'Work Sans';
     src: url("InterWork_Sans/Work_Sans/WorkSans-VariableFont_wght.ttf");
 }
-*/
+
 body {
     margin: 0;
     padding: 0;
     background: #D0F0C0;
-    font-family: cursive;
+    font-family: 'Work Sans';
 }
 
 /* navigation bar */
@@ -130,15 +130,12 @@ img.boberfooldal {
     height: auto;
     border-radius: 20%;
     border: 3px solid black;
-    width: 230px;
+    width: 200px;
 }
 
 .fooldalaside {
-    /*képet középre kell rakni */
     width: 30%;
     height: auto;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 
@@ -157,7 +154,8 @@ img.ismertetohod {
     height: auto;
     border-radius: 20%;
     border: 3px solid black;
-    width: 260px;
+    width: 230px;
+
 }
 
 .ismertetoasidekep {
@@ -202,15 +200,24 @@ img.terulet {
 
 input {
     float: right;
-    font-size: 30px;
+    font-size: 20px;
     background-color: #275243;
-    border: 0px;
     text-align: left;
+    border-radius: 8px;
 }
 
 input[type="text"] {
-    width: 60%;
+    width: 50%;
     height: 30px;
+    background-color: #275243;
+    float: right;
+}
+
+select {
+    float: right;
+    width: 20%;
+    height: 30px;
+    background-color: #275243;
 }
 
 .gomb {
@@ -296,6 +303,7 @@ img.boberkep {
 
 
 
+
 /* form */
 label.error {
     color: rgb(0, 255, 128);
@@ -316,11 +324,6 @@ label.error {
         flex-basis: 100%;
     }
 
-    aside.tapertek {
-        flex-basis: 100%;
-    }
-
-
 }
 
 @media all and (min-width: 768px) {
@@ -333,7 +336,6 @@ label.error {
     article {
         flex-basis: 48%;
     }
-
 
     aside {
         flex-basis: 23%;
